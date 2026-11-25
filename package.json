@@ -1,0 +1,46 @@
+{
+  "name": "eduportal-bd",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "node --experimental-strip-types --test src/lib/grading.test.ts src/lib/db-url.test.ts src/lib/auth/authorization.test.ts src/lib/auth/password-setup.test.ts src/lib/auth/password-reset.test.ts src/lib/email/config.test.ts src/lib/students/validation.test.ts src/lib/students/registration-validation.test.ts src/lib/students/import-mapping.test.ts src/lib/exam-results/validation.test.ts src/lib/exam-results/departments.test.ts src/lib/public-portal/validation.test.ts src/lib/applications/encryption.test.ts src/lib/public-profile/validation.test.ts scripts/test-db-safety.test.ts scripts/migration-target.test.ts",
+    "db:migrate": "node --experimental-strip-types scripts/migrate-existing-db.ts",
+    "db:deploy": "node --experimental-strip-types scripts/migrate-existing-db.ts",
+    "db:seed:staging-demo": "node --experimental-strip-types scripts/seed-staging-request-demo.ts",
+    "db:test:setup": "node --experimental-strip-types scripts/test-db-setup.ts",
+    "db:test:import": "node --experimental-strip-types scripts/import-test-workbook.ts",
+    "dev:test": "node --experimental-strip-types scripts/start-test-app.ts",
+    "test:staging": "node --experimental-strip-types scripts/staging-student-portal-e2e.ts"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "dotenv": "^16.6.1",
+    "exceljs": "^4.4.0",
+    "lucide-react": "latest",
+    "next": "^16.4.6",
+    "nodemailer": "^10.5.0",
+    "pg": "^8.16.3",
+    "qrcode": "^1.5.4",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "latest",
+    "@types/node": "latest",
+    "@types/nodemailer": "^8.0.2",
+    "@types/pg": "^8.23.1",
+    "@types/qrcode": "^1.5.6",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "eslint": "latest",
+    "eslint-config-next": "^16.4.6",
+    "tailwindcss": "latest",
+    "typescript": "latest"
+  }
+}

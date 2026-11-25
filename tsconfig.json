@@ -1,0 +1,52 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": false,
+    "skipLibCheck": true,
+    "strict": true,
+    "erasableSyntaxOnly": true,
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next-staging-e2e-20436e50-d79e-431e-8041-a2a6980f970c/types/**/*.ts",
+    ".next-staging-e2e-20436e50-d79e-431e-8041-a2a6980f970c/dev/types/**/*.ts",
+    ".next-staging-e2e-b15d9571-448d-42f0-86ee-a1ceb07c2588/types/**/*.ts",
+    ".next-staging-e2e-b15d9571-448d-42f0-86ee-a1ceb07c2588/dev/types/**/*.ts",
+    ".next-staging-e2e-d3418506-1173-4759-b18f-aded4f8768e0/types/**/*.ts",
+    ".next-staging-e2e-d3418506-1173-4759-b18f-aded4f8768e0/dev/types/**/*.ts",
+    ".next-staging-e2e-4b76d4fe-e6cd-4b09-9269-c093872d30f1/types/**/*.ts",
+    ".next-staging-e2e-4b76d4fe-e6cd-4b09-9269-c093872d30f1/dev/types/**/*.ts",
+  ],
+  "exclude": [
+    "node_modules",
+    "src/generated/prisma"
+  ]
+}

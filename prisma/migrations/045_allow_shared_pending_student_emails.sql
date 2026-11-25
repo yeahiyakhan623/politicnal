@@ -1,0 +1,1 @@
+DROP INDEX IF EXISTS public.student_account_requests_pending_email_unique;
